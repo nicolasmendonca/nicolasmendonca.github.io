@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<link rel="stylesheet" type="text/css" href="mystyle.css">
+        <meta charset="utf-8">
+        <title>Tutorial De Proyección</title>    
+		<link rel="icon" type="image/png" href="images/logopnfp.png" sizes="16x16">	
+    </head>
+    <body>
+		<div class="contenedorprincipal">
+		<div class="logobox">
+				<div class="logo"><img class="logos" src="images/logo-nuestra-escuela.png" style="padding-top:10%"></div>
+				<div class="logo"><img class="logos" src="images/logo-presidencia-ministerio-2016.png" width="325"> </div>
+				<div class="logo"><img class="logos" src="images/logo CFE.png" width="150"></div>
+		</div>
+			
+			<div class="container">
+				<h1>TUTORIAL DE PROYECCIÓN</h1>
+				
+				<ul>
+					<li>
+						<span class="number">!</span>
+						<div class="description">
+							<p style="color:#808080"><strong>
+								ATENCIÓN: </strong> para el siguiente tutorial necesitamos estar <underline>SEGUROS</underline> de que todos los inscriptos tienen una regla de salida. En el caso de no tenerla, nuestros resultados no serán confiables. Necesitamos hacer esa verificación primero.</p>
+							<p>
+								En este tutorial veremos cómo comparar las reglas de inscripción, con la situación particular de cada cursante. Podremos saber los cursos que tiene aprobado cada alumno y asimismo, identificar qué reglas debemos editar para balancear las inscripciones de los alumnos ya inscriptos, al próximo cuatrimestre.
+							</p>
+						</div>
+					</li>
+					<li>
+						<span class="number">1</span>
+						<div class="description">
+								<p>Para empezar, podemos hacer una proyección de inscripciones al postítulo de Maternal.</p>
+								<p>Del reporte de “Inscripciones y Calificaciones”, tenemos que filtrar sólo los alumnos activos.</p>
+							<img src="images/EzQ6wLg.png">
+							<p>De las calificaciones, sólo las que consideremos aprobadas.</p>
+
+							<p>Si todavía no se importaron las calificaciones, debemos bajar otro reporte con las materias del slot
+								que falte, y concatenarlo con el que bajamos.</p>
+							<img src="images/SWcrZ5N.png">
+
+						</div>
+					</li>
+					<li>
+						<span class="number">2</span>
+						<div class="description">
+							<p><strong>Si el postítulo tuviera cursos con optativos, tenemos que "Buscar y Reemplazar" los cursos hijos por los padres</strong></p>
+							Una vez que tenemos nuestra tabla con inscripciones, debemos hacer una tabla dinámica con los datos:
+							<table>
+								<style>
+
+								</style>
+
+									<tr>
+										<th><img src="images/tabladinamica.gif" alt="Tabla dinámica"></th>
+										<th><img src="images/kt0k9k4.png" alt="Tabla dinámica"></th>
+										<th><img src="images/CLShozN.png" alt="Columnas tabla dinámica"></th>
+									</tr>
+							</table>
+							<p>Es importante que copiemos la tabla, y peguemos <strong>sólo los valores</strong> en otra hoja. No volveremos a necesitar de la tabla dinámica</p>
+						</div>
+					</li>
+					<li>
+						<span class="number">3</span>
+						<div class="description">
+							<p>Ahora podríamos aprovechar para contar la cantidad de cursos aprobados. No lo necesitaremos para la proyección, pero es una buena manera de identificar cuántos cursos aprobados tiene cada alumno</p>
+							<img src="images/contar.gif">
+
+						</div>
+					</li>
+					<li>
+						<span class="number">4</span>
+						<div class="description">
+							<p>Ahora tenemos que usar el complemento "<strong><a href="http://www.asap-utilities.com/download-asap-utilities.php" target="blank">ASAP Utilities</a></strong>" para agregar el símbolo '|' luego de cada curso.<br></p>
+							<p>Esto será más claro cuando hagamos el cruce con el reporte de reglas</p>
+							<img src="images/insertar.gif" style="width:100%">
+							<p>A continuación, lo concatenamos en una sola columna, que ya tendrá un orden ascendente</p>
+							<img src="images/concatenar.gif" style="width:100%"><br>
+							<p><strong style="color:red">IMPORTANTE! </strong>debemos ordenar los valores tanto en las inscripciones como en las celdas para tener consistencia al momento de comparar los dos reportes</p>
+							<img src="images/ordenar.gif" style="width:100%">
+							<p>Sólo usaremos las primeras 3 columnas, podemos borrar el resto</p>
+						</div>
+					</li>
+
+				</ol>
+				<a class="linkforward" href="Tutorial2.html">Click aqui para ver parte 2</a>
+			</div>
+		</div>
+    </body>
+</html>

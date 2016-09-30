@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<link rel="stylesheet" type="text/css" href="mystyle.css">
+        <meta charset="utf-8">
+        <title>Tutorial De Proyección</title>    
+		<link rel="icon" type="image/png" href="images/logopnfp.png" sizes="16x16">	
+    </head>
+    <body>
+		<div class="contenedorprincipal">
+		<div class="logobox">
+				<div class="logo"><img class="logos" src="images/logo-nuestra-escuela.png" style="padding-top:10%"></div>
+				<div class="logo"><img class="logos" src="images/logo-presidencia-ministerio-2016.png" width="325"> </div>
+				<div class="logo"><img class="logos" src="images/logo CFE.png" width="150"></div>
+		</div>
+			
+			<div class="container">
+				<h1>TUTORIAL DE PROYECCIÓN</h1>
+				<ul>
+						<li>
+						<span class="number">5</span>
+						<div class="description">
+							<p>Vamos a dejar de lado el archivo de inscripciones, y a partir de ahora trabajaremos con el reporte de Reglas de Correlatividad.</p>
+							<p>Creamos otra tabla dinámica, apuntando sólo a un slot para saber cuantas aulas deberán abrirse. Si necesitamos saber varios slots podemos repetir el procedimiento.</p>
+							<img src="images/tabladinamica2.gif" style="width:100%">
+							<p>Para el cuadro de valores, seleccionamos "contar" (que saldrá por defecto).</p>
+							<p>También debemos ordenar los cursos en las reglas para mantener la consistencia:</p>
+							<img src="images/ordenar2.gif" style="width:100">
+							<p>Ahora vamos a unir en un mismo archivo las dos tablas</p>
+						</div>
+					</li>
+					<li>
+						<span class="number">6</span>
+						<div class="description">
+							<p>Ahora es donde hacemos el cruce de la siguiente manera:<br>
+							Contamos la cantidad de alumnos que tienen esa combinación de reglas, para averiguar cual es la probabilidad de que le ofrezca cada módulo.</p>
+							<img src="images/cruce.gif">
+							<p>Formula resultante:</p>
+							<p style="color:#808080"><strong>=CONTAR.SI(Aprobados!C:C;B2)</strong></p>
+						</div>
+					</li>
+					<li>
+						<span class="number">7</span>
+						<div class="description">
+							<img src="images/multiplicacion.gif" style="width:100%">
+							<p style="color:#808080"><strong>=$A2*C2/$L2</strong></p>
+							<p>$A2 = Cantidad de alumnos.<br>
+							C2 = cantidad de veces que se da el curso 3 en esa regla.<br>
+							$L2 = Total de cursos que se dan en esa regla en slot 2.</p>
+							<img style ="width:100%" src="images/total.gif">
+							<p>Y con esto ya tenemos a todos los alumnos que cursarán cada módulo en el slot 2.</p>
+						</div>
+					</li>
+				</ol>
+				<a class="linkbackward" href="index.html">Click aqui para volver a la parte 1</a>
+			</div>
+		</div>
+    </body>
+</html>
